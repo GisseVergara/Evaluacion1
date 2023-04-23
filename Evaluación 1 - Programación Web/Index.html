@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="images/LogoGroundZero.png">
+        <title>Ground Cero</title>
+        <!--CSS (incluye Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+
+    <body id="Inicio-page">
+        <header class="inicioHeader">
+            <!--Logo (Barra de Navegación)-->
+            <div class="logo"><a href="#"><img src="images/LogoGroundZero.png" weight="50px" height="50px"></a>
+            </div>
+            <!--topnav (Barra de Navegación)-->
+            <div class="topnav">
+                <ul>
+                    <a class="active" href="#inicio">INICIO</a>
+                    <a href="Galeria.html">GALERIA</a>
+                    <a href="#contacto">CONTACTO</a>
+                    <a href="Login.html">LOGIN</a>
+                    <input type="text" placeholder="Search..">
+                </ul>
+            </div>
+
+            <!--INICIO-->
+            <div class="imgcontainer">
+                <img src="images/LogoGroundZero.png" alt="Avatar" class="avatar">
+            </div>
+            <div class="textcontainer">
+                <h1> GROUND ZERO </h1>
+                <h2>Cooperativa</h2>
+                <h3>Copyright © Heno DarcaReid</h3>
+                <h3>__________________________</h3>
+            </div>
+        </header>
+        <!--Carrusel de imágenes -->
+        <div class="carousel">
+            <div class="carousel-inner">
+                <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+                <div class="carousel-item">
+                    <a href="Galeria.html">
+                    <img src="images/casa3.jpg">
+                    <img src="images/casa1.jpg">
+                    <div class="Texto-encima"><h5>Productos destacados</h5></div>
+                    </a>
+                </div>
+                <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item">
+                    <a href="Galeria.html">
+                        <img src="images/amigurumi1.jpg">
+                        <img src="images/amigurumi2.jpg">
+                    <div class="Texto-encima"><h5>Productos destacados</h5></div>
+                    </a>
+                </div>
+                <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item">
+                    <a href="Galeria.html">
+                    <img src="images/recina1.jpg">
+                    <img src="images/recina2.jpg">
+                    <div class="Texto-encima"><h5>Productos destacados</h5></div>
+                    </a>
+                </div>
+                <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+                <label for="carousel-2" class="carousel-control next control-1">›</label>
+                <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+                <label for="carousel-3" class="carousel-control next control-2">›</label>
+                <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+                <label for="carousel-1" class="carousel-control next control-3">›</label>
+                <ol class="carousel-indicators">
+                    <li>
+                        <label for="carousel-1" class="carousel-bullet">•</label>
+                    </li>
+                    <li>
+                        <label for="carousel-2" class="carousel-bullet">•</label>
+                    </li>
+                    <li>
+                        <label for="carousel-3" class="carousel-bullet">•</label>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+
+        <!--CONTACT-->
+        <section class="page-section" id="contacto">
+            <div class="container">
+                <!-- Contact Section Heading-->
+                <div class="text-center">
+                    <h2 class="page-section-heading text-secondary d-inline-block mb-0">CONTACTO</h2>
+                </div>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Contact Section Content-->
+                <div class="row justify-content-center">
+                    <div class="col-lg-4">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="icon-contact mb-3"><i class="fas fa-mobile-alt"></i></div>
+                            <div class="text-muted">Phone</div>
+                            <div class="lead font-weight-bold">(+569) XXXX XXXX</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="icon-contact mb-3"><i class="far fa-envelope"></i></div>
+                            <div class="text-muted">Email</div><a class="lead font-weight-bold" href="mailto:name@duocuc.cl">name@duocuc.cl</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>    
+
+        <!--FOOTER-->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer ubicación-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="mb-4">UBICACIÓN</h4>
+                        <p class="pre-wrap lead mb-0">2215 Calle falsa, SCH 65243</p>
+                    </div>
+                    <!-- Footer íconos redes sociales-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="mb-4">REDES SOCIALES</h4><a class="btn btn-outline-light btn-social mx-1" href=""><i class="fab fa-fw fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href=""><i class="fab fa-fw fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href=""><i class="fab fa-fw fa-linkedin-in"></i></a>
+                    </div>
+                    <!-- Footer "About..."-->
+                    <div class="col-lg-4">
+                        <h4 class="mb-4">SOBRE GROUND ZERO</h4>
+                        <p class="pre-wrap lead mb-0">Ground zero es una cooperativa de artistas incomprendidos con talentos en pinturas, tejidos, orfebrería, etc.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+    </body>
+</html>
