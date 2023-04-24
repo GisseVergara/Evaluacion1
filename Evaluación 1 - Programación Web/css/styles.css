@@ -1,312 +1,408 @@
 /*BARRA DE NAVEGACIÓN*/
 .topnav {
-    overflow: hidden;
-    background-color: #d0bcbc;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-  
-  /*Enlaces de la barra de navegación*/
-  .topnav a {
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /*Cambiar los colores de los enlaces de la barra de navegación */
-  .topnav a:hover {
-    background-color: #e6c9aeb1;
-    color: black;
-  }
-  
-  /*Página actual*/
-  .topnav a.active {
-    background-color: #5e0000a9;
-    color: white;
-  }
-  
-  /*Personalizar la Search box*/
-  .topnav input[type=text] {
-    float: right;
-    padding: 6px;
-    border: none;
-    margin-top: 8px;
-    margin-right: 16px;
-    font-size: 17px;
-  }
-  
-  /*Cuando la pantalla tenga menos de 600 px de ancho, pone los enlaces y el campo de búsqueda verticalmente en lugar de horizontalmente */
-  @media screen and (max-width: 600px) {
-    .topnav a, .topnav input[type=text] {
-      float: none;
-      display: block;
-      text-align: left;
-      width: 100%;
-      margin: 0;
-      padding: 14px;
-    }
-    .topnav input[type=text] {
-      border: 1px solid #ccc;
-    }
-  }
+  overflow: hidden;
+  background-color: #d0bcbc;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
-  ul{
-    padding:0;
-    margin:0 0 0 50px;
-    list-style: none;
+/*Enlaces de la barra de navegación*/
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/*Cambiar los colores de los enlaces de la barra de navegación */
+.topnav a:hover {
+  background-color: #e6c9aeb1;
+  color: black;
+}
+
+/*Página actual*/
+.topnav a.active {
+  background-color: #5e0000a9;
+  color: white;
+}
+
+/*Personalizar la Search box*/
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+/*Cuando la pantalla tenga menos de 600 px de ancho, pone los enlaces y el campo de búsqueda verticalmente en lugar de horizontalmente */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
   }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+
+ul{
+  padding:0;
+  margin:0 0 0 50px;
+  list-style: none;
+}
 
 /*  li{
-    float: left;
-  }*/
+  float: left;
+}*/
 
 /*--------------------------------------------------------*/
-  /*LOGO*/
-  .logo img{
-    position: absolute;
-  }
+/*LOGO*/
+.logo img{
+  position: absolute;
+}
 /*--------------------------------------------------------*/
 
-  /*INICIO*/
-  .textcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
+/*INICIO*/
+.textcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
-  .inicioHeader{
-    background-color: rgba(192, 161, 152, 0.555);
-  }
+.inicioHeader{
+  background-color: rgba(192, 161, 152, 0.555);
+}
 
 /*--------------------------------------------------------*/
-  /*CAROUSEL*/
-  html, body {
-    margin: 0px;
-    padding: 0px;
+/*CAROUSEL*/
+html, body {
+  margin: 0px;
+  padding: 0px;
 }
 
 .carousel {
-    position: relative;
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
-    margin-top: 26px;
-    background-color: #5e0000a9;
+  position: relative;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+  margin-top: 26px;
+  background-color: #5e0000a9;
 }
 
 .carousel-inner {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
 }
 
 .carousel-open:checked + .carousel-item {
-    position: static;
-    opacity: 100;
+  position: static;
+  opacity: 100;
 }
 
 .carousel-item {
-    position: absolute;
-    opacity: 0;
-    -webkit-transition: opacity 0.6s ease-out;
-    transition: opacity 0.6s ease-out;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 0.6s ease-out;
+  transition: opacity 0.6s ease-out;
 }
 
 .carousel-item img {
-    display: inline-block;
-    text-align: center;
-    height: 450px;
-    max-width: 50%;
-    
+  display: inline-block;
+  text-align: center;
+  height: 450px;
+  max-width: 50%;
+  
 }
 
 .Texto-encima{
-    position: absolute;
-    top: 50%;
-    left: 70%;
-    font-size: 100px;
-    transform: translate(-50%,-50%);
-    color:floralwhite;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    max-width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  font-size: 100px;
+  transform: translate(-50%,-50%);
+  color:floralwhite;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  max-width: 50%;
 }
 
 .carousel-control {
-    background: rgba(0, 0, 0, 0.28);
-    border-radius: 50%;
-    color: #fff;
-    cursor: pointer;
-    display: none;
-    font-size: 40px;
-    height: 40px;
-    line-height: 35px;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translate(0, -50%);
-    cursor: pointer;
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    text-align: center;
-    width: 40px;
-    z-index: 10;
+  background: rgba(0, 0, 0, 0.28);
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  font-size: 40px;
+  height: 40px;
+  line-height: 35px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  cursor: pointer;
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  text-align: center;
+  width: 40px;
+  z-index: 10;
 }
 
 .carousel-control.prev {
-    left: 2%;
+  left: 2%;
 }
 
 .carousel-control.next {
-    right: 2%;
+  right: 2%;
 }
 
 .carousel-control:hover {
-    background: rgba(0, 0, 0, 0.8);
-    color: #aaaaaa;
+  background: rgba(0, 0, 0, 0.8);
+  color: #aaaaaa;
 }
 
 #carousel-1:checked ~ .control-1,
 #carousel-2:checked ~ .control-2,
 #carousel-3:checked ~ .control-3 {
-    display: block;
+  display: block;
 }
 
 .carousel-indicators {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    bottom: 2%;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 10;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
 }
 
 .carousel-indicators li {
-    display: inline-block;
-    margin: 0 5px;
+  display: inline-block;
+  margin: 0 5px;
 }
 
 .carousel-bullet {
-    color: #ffbbbb55;
-    cursor: pointer;
-    display: block;
-    font-size: 35px;
+  color: #ffbbbb55;
+  cursor: pointer;
+  display: block;
+  font-size: 35px;
 }
 
 .carousel-bullet:hover {
-    color: #ffb9b9;
+  color: #ffb9b9;
 }
 
 #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
 #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
 #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
-    color: #f2edea;
+  color: #f2edea;
 }
 
 #title {
-    width: 100%;
-    position: absolute;
-    padding: 0px;
-    margin: 0px auto;
-    text-align: center;
-    font-size: 27px;
-    color: rgba(255, 255, 255, 1);
-    font-family: 'Open Sans', sans-serif;
-    z-index: 9999;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+  width: 100%;
+  position: absolute;
+  padding: 0px;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 27px;
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Open Sans', sans-serif;
+  z-index: 9999;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
 }
 
 /*--------------------------------------------------------*/
 /*LOGIN*/
 /*form */
 form {
-    border: 3px solid #f1f1f1;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #ede7e4;
-  }
-  
-  /* Entradas de ancho completo*/
-  input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-  }
-  
-  /* Establece un estilo para todos los botoness */
-  button {
-    background-color: #007c32;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-  }
-  
-  /* Agrega efecto de desplazamiento para los botones */
-  button:hover {
-    opacity: 0.8;
-  }
-  
-  /*Estilo extra para el botón cancelar (rojo) */
-  .cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #d12013;
-  }
-  
-  /* Centra la imagen del avatar dentro de este contenedor */
-  .imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-  }
-  
-  /* Avatar imagen */
-  img.avatar {
-    width: 20%;
-    border-radius: 50%;
-  }
-  
-  /*Agrega relleno a los contenedores */
-  .containerlog {
-    padding: 16px;
-  }
-  
-  /* "Forgot password" */
+  border: 3px solid #f1f1f1;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #ede7e4;
+}
+
+/* Entradas de ancho completo*/
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Establece un estilo para todos los botoness */
+button {
+  background-color: #007c32;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Agrega efecto de desplazamiento para los botones */
+button:hover {
+  opacity: 0.8;
+}
+
+/*Estilo extra para el botón cancelar (rojo) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #d12013;
+}
+
+.Signbtn {
+  width: auto;
+  padding: 10px 30px;
+  background-color: #426aeba2;
+}
+
+/* Centra la imagen del avatar dentro de este contenedor */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar imagen */
+img.avatar {
+  width: 20%;
+  border-radius: 50%;
+}
+
+/*Agrega relleno a los contenedores */
+.containerlog {
+  padding: 16px;
+}
+
+/* "Forgot password" */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Cambia los estilos para el botón de intervalo y cancelación en pantallas extra pequeñas */
+@media screen and (max-width: 300px) {
   span.psw {
-    float: right;
-    padding-top: 16px;
+    display: block;
+    float: none;
   }
-  
-  /* Cambia los estilos para el botón de intervalo y cancelación en pantallas extra pequeñas */
-  @media screen and (max-width: 300px) {
-    span.psw {
-      display: block;
-      float: none;
-    }
-    .cancelbtn {
-      width: 100%;
-    }
+  .cancelbtn {
+    width: 100%;
   }
+}
 
 /*--------------------------------------------------------*/
 
-  /*CONTACTO*/
-  .page-section{
-    background-color: #f2edea;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-  }
+/*CONTACTO*/
+.page-section{
+  background-color: #f2edea;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
 
 /*--------------------------------------------------------*/
-  /*CONTACTO*/
-  .footer{
-    background-color:#d0bcbc;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
+/*CONTACTO*/
+.containerFooter{
+  background-color:#d0bcbc;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+
+.bi bi-twitter, bi bi-linkedin, bi bi-facebook{
+  width: 100%;
+}
+
+
+/*---------------------------------------------------------*/
+/*LOGIN Y SIGNUP POP UP*/
+.box {
+  width: 20%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 20px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.buttonpopup {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #06D85F;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
   }
+  .popup{
+    width: 70%;
+  }
+}
