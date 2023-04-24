@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <link rel="shortcut icon" href="images/LogoGroundZero.png">
-        <title>Ground Cero</title>
+        <title>Ground Zero</title>
         <!--CSS (incluye Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet">
     </head>
@@ -17,7 +17,7 @@
             <ul>
                 <a href="Index.html">INICIO</a>
                 <a href="Galeria.html">GALERIA</a>
-                <a href="#contacto">CONTACTO</a>
+                <a href="FormularioContacto.html">CONTACTO</a>
                 <a class="active" href="Login.html">LOGIN</a>
                 <input type="text" placeholder="Search..">
             </ul>
@@ -30,20 +30,35 @@
         </div>
     
         <div class="containerlog">
-        <label for="uname"><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label for="eml"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="eml" required>
     
         <label for="psw"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="psw" required>
     
-        <button type="submit">Login</button>
+        <button type="submit">
+            <div class="box">
+                <a class="buttonpopup" href="#popup1">Login</a>
+            </div>
+        </button>
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>Bienvenido!</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    Veamos la galería!
+                </div>
+            </div>
+        </div>
         <label>
             <input type="checkbox" checked="checked" name="remember"> Remember me
         </label>
         </div>
     
         <div class="container" style="background-color:#f1f1f1">
-        <button type="button" class="cancelbtn">Cancel</button>
+        <button type="button" class="cancelbtn"><a href="Index.html">Cancel</a></button>
+        <button type="button" class="Signbtn"><a href="Signup.html">No tengo cuenta. Crear cuenta</a></button>
         <span class="psw">Forgot <a href="#">password?</a></span>
         </div>
     </form>
